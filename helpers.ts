@@ -25,7 +25,7 @@ export const neighbors = (graph: GraphNode[][], node: GraphNode): Array<GraphNod
     return ret;
 }
 
-export const heuristic = (neighbor: NodePosition, end: NodePosition) => {
+export const heuristic = (neighbor: NodePosition, end: NodePosition): number => {
     const d1 = Math.abs (end.x - neighbor.x);
     const d2 = Math.abs (end.y - neighbor.y);
     return d1 + d2;

@@ -42,7 +42,7 @@ export class Graph {
           
           const currentNode: GraphNode = openList[lowFScoreIndex]
           if(currentNode == end) { 
-            console.log('success! current node below, i hope this is the one you looking for')
+            console.log('success!')
             let curr = currentNode;
             const ret: Array<GraphNode> = [];
             while(curr.parent) {
